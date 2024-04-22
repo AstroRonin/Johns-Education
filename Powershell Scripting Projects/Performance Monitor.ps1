@@ -2,7 +2,7 @@
 function get-cpuusage {
     $cpupwr = get-counter '\processor(_total)\% processor time'
         $cpupwr = $cpupwr.countersamples[0].cookedvalue
-       return $cpupwr
+        return $cpupwr
    }
 
 #This function is used to check the percentage of available RAM.
